@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="328.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ZipArchiver">
+   <children>
+      <Text layoutX="39.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fileAddress" layoutX="32.0" layoutY="50.0" prefHeight="30.0" prefWidth="325.0" promptText="file address" />
+      <Text layoutX="39.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Directory to save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="directoryAddress" layoutX="32.0" layoutY="123.0" prefHeight="30.0" prefWidth="325.0" promptText="directory address" />
+      <Button layoutX="369.0" layoutY="123.0" mnemonicParsing="false" onAction="#browse" text="Browse" />
+      <Text layoutX="39.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Archive name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="archiveName" layoutX="32.0" layoutY="200.0" prefHeight="30.0" prefWidth="325.0" promptText="archive name" />
+      <Text fx:id="message" fill="#18dd1b" layoutX="203.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="182.0" layoutY="284.0" mnemonicParsing="false" onAction="#toZip" prefWidth="100.0" text="Zip" />
+      <Text fx:id="text1" fill="RED" layoutX="40.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.6708984375" />
+      <Text fx:id="text2" fill="RED" layoutX="40.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.6708984375" />
+      <Text fx:id="text3" fill="RED" layoutX="18.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.6708984375" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
